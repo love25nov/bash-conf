@@ -64,3 +64,5 @@ alias ls="ls --color=always --group-directories-first"
 
 alias vi="nvim -p"
 alias vd="nvim -dO"
+
+printf "\e[5 q"
