@@ -80,5 +80,3 @@ alias ls="ls --color=always --group-directories-first"
 
 alias vi="nvim -p"
 alias vd="nvim -dO"
-
-fastfetch -l garuda
