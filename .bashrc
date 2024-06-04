@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export PATH="$HOME/usr/bin:$PATH"
+
 # Load starship prompt if starship is installed
 if [ -x /usr/bin/starship ]; then
 	__main() {
