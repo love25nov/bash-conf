@@ -62,6 +62,9 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 alias ls="ls --color=always --group-directories-first"
 
+alias rm="rm --verbose --interactive=once"
+alias cd="cd -P"
+
 alias vi="nvim -p"
 alias vd="nvim -dO"
 
