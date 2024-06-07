@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export PATH="$HOME/usr/bin:$PATH"
+export PATH="$HOME/Android/Sdk/emulator:$HOME/Android/Sdk/platform-tools:$HOME/usr/bin:$PATH"
 
 export LIBVIRT_DEFAULT_URI=qemu:///system
 
