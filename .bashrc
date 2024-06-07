@@ -3,6 +3,8 @@
 
 export PATH="$HOME/usr/bin:$PATH"
 
+export LIBVIRT_DEFAULT_URI=qemu:///system
+
 source "$HOME/lib/asdf/asdf.sh"
 source "$HOME/lib/asdf/completions/asdf.bash"
 
