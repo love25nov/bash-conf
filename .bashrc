@@ -69,4 +69,3 @@ alias vi="nvim -p"
 alias vd="nvim -dO"
 
 printf "\e[5 q"
-fastfetch -l garuda
