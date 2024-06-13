@@ -71,4 +71,34 @@ alias vi="nvim -p"
 alias vd="nvim -dO"
 
 printf "\e[5 q"
+
+ub() {
+    unbuffer "$@" | less -R
+}
+
+rawurlencode() {
+    local string="$*"
+    local strlen=${#string}
+    local encoded=""
+    local pos c o
+    for ((pos = 0; pos < strlen; pos++)); do
+        c=${string:$pos:1}
+        case "$c" in
+            [-_.~a-zA-Z0-9])
+                o="${c}"
+                ;;
+            *)
+                printf -v o '%%%02x' "'$c"
+                ;;
+        esac
+        encoded+="${o}"
+    done
+    echo "${encoded}"
+}
+
+help() {
+    local u
+    u="$(rawurlencode "$@")"
+    ub curl "https://cheat.sh/$u"
+}
 fastfetch -l garuda
