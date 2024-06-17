@@ -14,7 +14,6 @@ source "$HOME/lib/asdf/completions/asdf.bash"
 alias cat='bat --style header --style snip --style changes --style header'
 
 # Common use
-alias grubup="sudo update-grub"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '
