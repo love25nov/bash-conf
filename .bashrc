@@ -15,7 +15,6 @@ alias cat='bat --style header --style snip --style changes --style header'
 
 # Common use
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias untar='tar -zxvf '
 alias wget='wget -c '
 alias rmpkg="sudo pacman -Rdd"
 alias psmem='ps auxf | sort -nr -k 4'
