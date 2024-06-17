@@ -46,7 +46,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 
 # Help people new to Arch
 alias tb='nc termbin.com 9999'
-alias helpme='cht.sh --shell'
 alias pacdiff='sudo -H DIFFPROG=meld pacdiff'
 
 # Cleanup orphaned packages
