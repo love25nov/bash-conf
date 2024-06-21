@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export PS1='[\u@\h \W[$?]]\$ '
+
 export PATH="$HOME/usr/zeek/bin:$HOME/Android/Sdk/emulator:$HOME/Android/Sdk/platform-tools:$HOME/usr/bin:$PATH"
 
 export LIBVIRT_DEFAULT_URI=qemu:///system
